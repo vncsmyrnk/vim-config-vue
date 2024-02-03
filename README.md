@@ -9,4 +9,7 @@ To install it just run:
 ```bash
 git clone --depth 1 https://github.com/vncsmyrnk/vim-vue-config.git ~/.config/nvim
 ```
+
+Next, opem `nvim` and be sure to run `PackerSync` to install the dependencies. Errors may occur when running `PackerSync`, so be sure to run it multiple times if necessary.
+
 \**Note that the last command will override any existing nvim config*

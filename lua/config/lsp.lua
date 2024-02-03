@@ -17,9 +17,16 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'jdtls'},
+  ensure_installed = {
+    lsp = {
+      'vue-language-server',
+      'typescript-language-server'
+    }
+  }
   handlers = {
     lsp_zero.default_setup,
     jdtls = lsp_zero.noop,
   }
 })
+require'lspconfig'.vuels.setup{}
+require'lspconfig'.tsserver.setup{}
