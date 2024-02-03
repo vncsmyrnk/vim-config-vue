@@ -22,7 +22,7 @@ require('mason-lspconfig').setup({
       'vue-language-server',
       'typescript-language-server'
     }
-  }
+  },
   handlers = {
     lsp_zero.default_setup,
     jdtls = lsp_zero.noop,
